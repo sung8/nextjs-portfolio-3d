@@ -5,8 +5,12 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motions";
 
-const ServiceCard = () => {
-  return <p>Hello World</p>;
+const ServiceCard = ({ index, title, icon }) => {
+  return (
+    <Tilt className="xs:w-[250px] w-full">
+      <p>{title}</p>
+    </Tilt>
+  );
 };
 const About = () => {
   return (
